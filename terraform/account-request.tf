@@ -28,7 +28,8 @@ module "req_accnt_dev01" {
   }
 
   custom_fields = {
-    custom_param1 = "dev1"
+    custom1 = "a"
+    custom2 = "b"
   }
 
   #account_customizations_name = "DEV2-BUDGET-2"
