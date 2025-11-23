@@ -36,7 +36,6 @@ module "req_accnt_dev01" {
   account_customizations_name = "DEV"
 }
 
-
 #어카운트 네임 Rule
 #AccountName 은 특수문자나 공백을 포함하면 안됩니다.
 #지원되는 캐릭터는 [a-zA-Z0-9][a-zA-Z0-9._-] 입니다.
