@@ -19,7 +19,7 @@ module "req_accnt_dev01" {
   account_tags = {
     "ABC:Owner"       = "mhoonkim"
     "ABC:Environment" = "Dev"
-    "ABC:Project"     = "CT-AFT"
+    "ABC:Project"     = "CT-AFT-DEV"
   }
 
   change_management_parameters = {
