@@ -1,6 +1,8 @@
 ## Auto generated backend.tf ##
 ## Updated on: {{ timestamp }} ##
 
+##assume_role은 backend 블록에서 지원하지 않음
+
 {% if tf_distribution_type == "oss" -%}
 terraform {
   required_version = ">= {{ tf_version }}"
@@ -24,3 +26,5 @@ terraform {
   }
 }
 {% endif %}
+
+
