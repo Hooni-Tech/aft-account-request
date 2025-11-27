@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 module "req_accnt_prod01" {
-  source = "../modules/aft-account-request"
+  source = "../../modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail = "dark9121+ctprojecta@gmail.com"
