@@ -8,7 +8,7 @@ module "req_accnt_prod01" {
     AccountEmail = "dark9121+ctprojecta@gmail.com"
     AccountName  = "projecta"
     # Syntax for top-level OU
-    ManagedOrganizationalUnit = "PROD"
+    ManagedOrganizationalUnit = "ou-6wt0-cwwg26m8"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Production (ou-xfe5-a8hb8ml8)"
     SSOUserEmail     = "dark9121@gmail.com"
