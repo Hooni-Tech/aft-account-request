@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 module "req_accnt_prod01" {
-  source = "./modules/aft-account-request"
+  source = "../modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "dark9121+ctaftprod01@gmail.com"
-    AccountName  = "aftprod01"
+    AccountEmail = "dark9121+ctprojecta@gmail.com"
+    AccountName  = "projecta"
     # Syntax for top-level OU
     ManagedOrganizationalUnit = "PROD"
     # Syntax for nested OU
@@ -17,9 +17,9 @@ module "req_accnt_prod01" {
   }
 
   account_tags = {
-    "ABC:Owner"       = "mhoonkim"
+    "ABC:OU"          = "Game"
     "ABC:Environment" = "PROD"
-    "ABC:Project"     = "CT-AFT-PROD"
+    "ABC:Project"     = "ProjectA"
   }
 
   change_management_parameters = {
@@ -28,12 +28,13 @@ module "req_accnt_prod01" {
   }
 
   custom_fields = {
-    custom1 = "a"
-    custom2 = "b"
+    ou      = "Game"
+    env     = "PROD"
+    project = "ProjectA"
   }
 
   #account_customizations_name = "DEV2-BUDGET-2"
-  account_customizations_name = "PROD"
+  account_customizations_name = "Game/PROD/ProjectA"
 }
 
 #어카운트 네임 Rule
